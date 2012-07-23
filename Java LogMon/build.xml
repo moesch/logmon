@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="LogMon" default="mkjar" basedir=".">
+
+	<property name="builddir" location="bin"/>
+	<property name="distdir" location="dist"/>
+	<property name="srcdir" location="src"/>
+
+	<target name="clean">
+		<delete dir="${builddir}"/>
+		<delete dir="${distdir}"/>
+	</target>
+
+	<!-- create build dir -->
+	<target name="init">
+		<mkdir dir="${builddir}" />
+		<mkdir dir="${distdir}" />
+	</target>
+
+	<!-- run javac -->
+	<target name="build" depends="init">
+		<javac srcdir="${srcdir}" destdir="${builddir}">
+		</javac>
+		<copy file="${srcdir}/cfg/configuration.dtd" tofile="${builddir}/cfg/configuration.dtd"/>
+	</target>
+
+	<!-- create jar -->
+	<target name="mkjar" depends="build">
+
+		<jar destfile="${distdir}/logmon.jar">
+			<manifest>
+				<attribute name="Built-By" value="thomas.weidlich@die-moesch.de" />
+				<attribute name="Main-Class" value="app.LogMon" />
+				<attribute name="License" value="GPL" />
+			</manifest>
+			<fileset dir="${builddir}"/>
+		</jar>
+	</target>
+
+	<target name="latex">
+
+		<!-- two latex run to create *.toc -->
+		<exec dir="doc" executable="/usr/bin/latex">
+			<arg value="Manual.tex"/>
+		</exec>
+		<exec dir="doc" executable="/usr/bin/latex">
+			<arg value="Manual.tex"/>
+		</exec>
+
+		<!-- create pdf for see images -->
+		<exec dir="doc" executable="/usr/bin/dvipdf">
+	    	<arg value="Manual.dvi"/>
+		</exec>
+
+	</target>
+
+	<!-- Create Distribution -->
+	<target name="mkdistribution">
+		<mkdir dir="${distdir}/doc" />
+
+		<copy todir="${distdir}/doc">
+		    <fileset dir="doc">
+		    	<exclude name="*.toc"/>
+		    	<exclude name="*.aux"/>
+		    	<exclude name="*.log"/>
+		    </fileset>
+		</copy>
+
+	</target>
+</project>
+

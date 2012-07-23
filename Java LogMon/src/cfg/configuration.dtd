@@ -1,0 +1,24 @@
+<!ELEMENT config (database,alert,logfile*)>
+
+<!ELEMENT logfile (file,pattern*)>
+
+<!ELEMENT properties (property*)>
+<!ELEMENT property (#PCDATA)>
+<!ATTLIST property name CDATA #REQUIRED>
+
+<!ELEMENT file (#PCDATA)>
+<!ATTLIST file start CDATA #IMPLIED>
+
+<!ELEMENT database (id,pid?,path?)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
+<!ELEMENT pid (#PCDATA)>
+
+<!ELEMENT pattern (regex,msg,severity,condition?,properties?)>
+<!ELEMENT regex (#PCDATA)>
+<!ELEMENT msg (#PCDATA)>
+<!ELEMENT severity (#PCDATA)>
+<!ELEMENT condition (#PCDATA)>
+
+<!ELEMENT alert (class,properties)>
+<!ELEMENT class (#PCDATA)>
