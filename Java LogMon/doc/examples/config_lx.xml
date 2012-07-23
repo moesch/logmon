@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE config SYSTEM "configuration.dtd">
+<config>
+	<database>
+		<id>LinuxTest</id>
+	</database>
+	<alert>
+		<class>alert.Tivoli</class>
+		<properties>
+			<property name="init.tec1">dus30tsgedcd01.tivoli.madm.net</property>
+			<property name="init.tec2">dus30tsgedcd02.tivoli.madm.net</property>
+			<property name="send.class">MGI_Event</property>
+			<!-- <property name="send.hostname">TWTEST</property> -->
+		</properties>
+	</alert>
+	<logfile>
+		<!-- Start position at current or begin -->
+		<file start="current">/var/log/messages</file>
+		<pattern>
+			<!-- Jun  6 20:01:33 agrippa kernel: [33895.395657] Deny Policy IN=eth0 OUT= MAC=ff:ff:ff:ff:ff:ff:00:16:6f:8d:cb:c3:08:00 SRC=0.0.0.0 DST=255.255.255.255 LEN=328 TOS=0x10 PREC=0x00 TTL=128 ID=0 PROTO=UDP SPT=68 DPT=67 LEN=308 -->
+			<regex>(\w+)\s+(\d+)\s+([\d:]+).*Deny Policy.*SRC=([\d\.]+).*DPT=(\d+)</regex>
+			<msg>Firewall deny from IP $4 to Port $5</msg>
+			<severity>WARNING</severity>
+			<condition>firewall.js</condition>
+		</pattern>
+		<pattern>
+			<regex>.*Error(.*)</regex>
+			<msg>Error: $1</msg>
+			<severity>CRITICAL</severity>
+		</pattern>
+	</logfile>
+</config>
