@@ -1,0 +1,8 @@
+Require:
+
+JavaMail form http://www.oracle.com/technetwork/java/javamail/index.html
+
+Copy javamail*.zip to oracle
+
+Copy library mail.jar to folder lib
+
