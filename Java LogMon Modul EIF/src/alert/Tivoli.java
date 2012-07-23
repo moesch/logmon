@@ -1,14 +1,21 @@
-/**
- * Project: Java LogMon Modul EIF
- * Author:  Thomas.weidlich
+/*
+ * Author: <thomas.weidlich@die-moesch.de>
  *
- * $Id: Tivoli.java,v 1.7 2012-07-19 06:32:35 thomas Exp $
- * $Source: /home/thomas/cvsrepos/logmon/Java\040LogMon\040Modul\040EIF/src/alert/Tivoli.java,v $
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
  *
- * Description:
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Library General Public License for more details.
  *
- *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor Boston, MA 02110-1301,  USA
  */
+
 package alert;
 
 import java.io.Reader;
@@ -37,15 +44,14 @@ public class Tivoli implements IAlert {
 	public boolean init(Properties properties) {
 		boolean rc = false;
 
-		
 		// Get local hostname
 		try{
 			InetAddress localMachine = InetAddress.getLocalHost();
 			hostname = localMachine.getHostName();
 		} catch(UnknownHostException e){
 			logger.fine("Can't get local hostname");
-		}		
-		
+		}
+
 		String tec1 = null;
 		String tec2 = null;
 
@@ -123,7 +129,6 @@ public class Tivoli implements IAlert {
 
 		logger.fine("Create Tivoli Event with " + properties);
 
-	
 		TECEvent event = new TECEvent();
 
 		event.setClassName(properties.getProperty("send.class"));
