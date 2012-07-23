@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="LogMon Modul SendMail" default="mkjar" basedir=".">
+
+	<property name="builddir" location="bin"/>
+	<property name="distdir" location="dist"/>
+	<property name="srcdir" location="src"/>
+
+	<target name="clean">
+		<delete dir="${builddir}"/>
+		<delete dir="${distdir}"/>
+	</target>
+
+	<!-- create build dir -->
+	<target name="init">
+		<mkdir dir="${builddir}" />
+		<mkdir dir="${distdir}" />
+		<mkdir dir="${distdir}/lib" />
+	</target>
+
+	<!-- run javac -->
+	<target name="build" depends="init">
+		<javac srcdir="${srcdir}" destdir="${builddir}">
+		</javac>
+	</target>
+
+	<!-- create jar -->
+	<target name="mkjar" depends="build">
+
+		<jar destfile="${distdir}/logmonModMail.jar">
+			<manifest>
+				<attribute name="Built-By" value="thomas.weidlich@die-moesch.de" />
+				<attribute name="License" value="GPL" />
+			</manifest>
+			<fileset dir="${builddir}"/>
+		</jar>
+		<copy todir="${distdir}/lib">
+			<fileset dir="./lib">
+				<include name="**/*.jar" />
+			</fileset>
+		</copy>
+	</target>
+</project>
+
