@@ -4,11 +4,7 @@
 	<classpathentry kind="src" path="test"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Java LogMon"/>
-	<classpathentry kind="lib" path="lib/mail.jar">
-		<attributes>
-			<attribute name="javadoc_location" value="jar:platform:/resource/Java LogMon Modul Mail/oracle/javamail1_4_5.zip!/javamail-1.4.5/docs/javadocs"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry kind="lib" path="lib/mail.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
