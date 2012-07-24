@@ -42,7 +42,7 @@ public class LogPattern {
 	private String[] groups;
 	private Severity severity = Severity.WARNING;
 
-	private String condition_filename = null;
+	private byte[] condition_buffer = null;
 	private final ScriptEngine jsengine;
 
 	private Occurrence occurrence = new Occurrence();
@@ -154,8 +154,17 @@ public class LogPattern {
 
 		String fname = Util.resolvENV(filename);
 
-		if(new File(fname).canRead()){
-			condition_filename = fname;
+		try{
+			File file = new File(fname);
+			condition_buffer = new byte[(int) file.length()];
+
+			FileInputStream fis = new FileInputStream(file);
+			fis.read(condition_buffer);
+			fis.close();
+
+		} catch(Exception e){
+			condition_buffer = null;
+			logger.warning("Can't read condition file " + fname);
 		}
 	}
 
@@ -188,9 +197,10 @@ public class LogPattern {
 		}
 
 		// Check condition if pattern matched
-		if(check_success && condition_filename != null){
+		if(check_success && condition_buffer != null){
 			try{
-				Reader reader = new FileReader(condition_filename);
+
+				Reader reader = new StringReader(new String(condition_buffer));
 
 				String status = "false";
 
@@ -228,11 +238,8 @@ public class LogPattern {
 					check_success = false;
 				}
 
-			} catch(FileNotFoundException e){
-				logger.warning("Condition file not found " + condition_filename);
-
 			} catch(ScriptException e){
-				logger.log(Level.WARNING, "Condition script exception on file " + condition_filename + " Message: " + e.getMessage());
+				logger.log(Level.WARNING, "Condition script exception on file. Message: " + e.getMessage());
 			}
 		}
 
