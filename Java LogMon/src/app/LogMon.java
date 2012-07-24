@@ -29,9 +29,7 @@ import java.util.logging.Logger;
 import javax.management.MBeanServer;
 import javax.management.ObjectName;
 
-import mon.DataBase;
-import mon.LogSource;
-import mon.WatchSource;
+import mon.*;
 import mon.evt.IAlert;
 import cfg.Config;
 
@@ -56,27 +54,24 @@ public class LogMon implements Runnable {
 		// Read given configuration file
 		config = new Config(args);
 		registerMBean(config, "LogMon:type=Config");
-		
-		
-		//Write pid to file
+
+		// Write pid to file
 		try{
-			String pidpath=config.getPIDPath();
-			int pid=getPID();
-			
-			if(pid>0 && pidpath!=null){
+			String pidpath = config.getPIDPath();
+
+			if(pidpath != null){
 				File pidfile = new File(pidpath);
-				
+
 				PrintWriter pr = new PrintWriter(pidfile);
-				pr.print(pid);
+				pr.print(getPID());
 				pr.close();
-				
+
 				pidfile.deleteOnExit();
 			}
-		}catch(Exception e){
-			
+		} catch(Exception e){
+
 		}
-		
-		
+
 		// ShutdownHook
 		Runtime.getRuntime().addShutdownHook(new Thread(this));
 
@@ -176,16 +171,13 @@ public class LogMon implements Runnable {
 	}
 
 	/**
-	 * 
+	 *
 	 */
-	private int getPID(){
-		int id=-1;
-		
+	private String getPID() {
 		String name = ManagementFactory.getRuntimeMXBean().getName();
-		id=Integer.parseInt((name.split("@"))[0]);
-		
-		return id;
+		return (name.split("@"))[0];
 	}
+
 	/**
 	 * Get the one and only
 	 * 
