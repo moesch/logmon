@@ -1,7 +1,7 @@
 %
 % LogMon Manual
-% $Id: Manual.tex,v 1.16 2012-07-19 07:50:51 thomas Exp $
 %
+
 \documentclass[11pt,a4paper]{article}
 
 \setlength{\parskip}{1.1ex}
@@ -91,7 +91,7 @@ directory is used. Examples:
 
 \subsection{The section: alert}
 
-The way-of-alert is set in alert section. You have to add one alert module to \java \textit{classpath} 
+The way-of-alert is set in alert section. You have to add one alert module to \java \textit{classpath}
 and setup the alerting in alert section. Today are two alert modules available:
 
 \bigskip
@@ -123,7 +123,7 @@ from logmon source.
 
 \subsection{The section: logfile}
 
-The most important part of configuration are the one or more sections \verb#<logfile>#. You can  
+The most important part of configuration are the one or more sections \verb#<logfile>#. You can
 setup one or more logfiles with different pattern definitions! One first simple minimal example:
 
 \begin{samepage}
@@ -375,7 +375,7 @@ The stdout module alerts to the stdout console. I use it for debugging.
 \label{sec:eif}
 
 Send Event to IBM Tivoli Enterprise Console. It require some additional jar in
-folder lib. Contact IBM and ask for EIF SDK. The most important the properties 
+folder lib. Contact IBM and ask for EIF SDK. The most important the properties
 init.tec1 and init.tec2. Setup two ``TEC Gateway Reciever'' (most time TEC
 servers).
 
@@ -391,8 +391,8 @@ servers).
 
 Send alert as mail to SMTP receiver. Require the additional jar mail in
 CLASSPATH. If the SMTP server need some authentication set user and
-password. Be careful about file permissions of 
-configuration! This is not a secure setup. 
+password. Be careful about file permissions of
+configuration! This is not a secure setup.
 
 \begin{tabular}{l|p{0.5\textwidth}}
   Property 		    & Description\\\hline
@@ -441,7 +441,7 @@ java.util.logging.FileHandler.append=false
 \subsection{JMX (\java Management Extensions)}
 
 I add some JMX MBean to \logmon. To monitor \logmon from remote add follow
-arguments. It open some port without any security. Be careful! 
+arguments. It open some port without any security. Be careful!
 If you need some secure connection setting, please show \java jmx documentation.
 
 \begin{figure}[h]
