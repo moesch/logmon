@@ -1,6 +1,4 @@
 /*
- * $Id: LogPattern.java,v 1.18 2012-07-13 10:27:28 thomas Exp $
- *
  * Author: <thomas@die-moesch.de>
  *
  * This program is free software; you can redistribute it and/or modify

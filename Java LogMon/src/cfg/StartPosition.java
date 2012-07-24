@@ -1,6 +1,4 @@
 /*
- * $Id: StartPosition.java,v 1.2 2012-07-05 20:45:55 thomas Exp $
- *
  * Author: <thomas.weidlich@die-moesch.de>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -22,14 +20,14 @@ package cfg;
 
 /**
  * Possible start positions while open logfile
- *
+ * 
  * <ul>
- * 	<li>CURRENT : The crurent logfile position</li>
- *  <li>BEGIN : Read from begin of logfile
+ * <li>CURRENT : The crurent logfile position</li>
+ * <li>BEGIN : Read from begin of logfile
  * </ul>
- *
+ * 
  * @author thomas.weidlich@die-moesch.de
  */
 public enum StartPosition {
-	BEGIN,CURRENT,LAST
+	BEGIN, CURRENT, LAST
 }

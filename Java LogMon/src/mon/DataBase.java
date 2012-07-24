@@ -1,6 +1,4 @@
 /*
- * $Id: DataBase.java,v 1.12 2012-07-19 06:23:19 thomas Exp $
- *
  * Author: <thomas@die-moesch.de>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -27,9 +25,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
- * The corralation database to store matched ocurrence. 
- * The db file is a simple csv file. it is only used for
- * restart LogMon to recreate the Map db. 
+ * The corralation database to store matched ocurrence. The db file is a simple csv file. it is only used for restart LogMon to recreate the Map db.
  * 
  * The real use data are in memory (Map)!!!
  */
@@ -38,7 +34,7 @@ public class DataBase implements Runnable, DataBaseMBean {
 	private boolean is_dirty = false;
 
 	private final Thread thread = new Thread(this);
-	private static int LOOPTIME = 3000;	//ms 
+	private static int LOOPTIME = 3000; // ms
 
 	private final Logger logger = Logger.getLogger(this.getClass().getName());
 	private ConcurrentHashMap<String, Occurrence> db = new ConcurrentHashMap<String, Occurrence>();

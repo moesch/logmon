@@ -1,14 +1,21 @@
-/**
- * Project: Java LogMon
- * Author:  Thomas.weidlich
+/*
+ * Author: <thomas@die-moesch.de>
  *
- * $Id: TestDataBase.java,v 1.6 2012-07-06 06:14:12 thomas Exp $
- * $Source: /home/thomas/cvsrepos/logmon/Java\040LogMon/test/mon/TestDataBase.java,v $
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
  *
- * Description:
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Library General Public License for more details.
  *
- *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 51 Franklin Street, Fifth Floor Boston, MA 02110-1301,  USA
  */
+
 package mon;
 
 import java.io.File;
@@ -47,7 +54,7 @@ public class TestDataBase {
 	 */
 	@Before
 	public void setUp() throws Exception {
-		db = new DataBase("junit",System.getProperty("java.io.tmpdir"));
+		db = new DataBase("junit", System.getProperty("java.io.tmpdir"));
 
 	}
 
