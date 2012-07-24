@@ -14,12 +14,12 @@
 	</alert>
 	<logfile>
 		<!-- Start position at current or begin -->
-		<file start="begin">test.log</file>
+		<file start="begin">C:\temp\test.log</file>
 		<pattern>
 			<regex>Test(.*)</regex>
 			<msg>Testevent => $1</msg>
 			<severity>WARNING</severity>
-			<condition>wintest.js</condition>
+			<condition>doc/examples/wintest.js</condition>
 			<properties>
 				<property name="send.slot.mgi_eventkey">$1</property>
 				<property name="send.slot.mgi_eventsubkey">Das ist ein EventSubKey</property>
