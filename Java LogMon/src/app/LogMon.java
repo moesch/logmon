@@ -62,14 +62,19 @@ public class LogMon implements Runnable {
 			if(pidpath != null){
 				File pidfile = new File(pidpath);
 
-				PrintWriter pr = new PrintWriter(pidfile);
-				pr.print(getPID());
-				pr.close();
+				if(pidfile.exists()){
+					logger.severe("PID file exists. Remove first!");
+					System.exit(10);
+				} else{
 
-				pidfile.deleteOnExit();
+					PrintWriter pr = new PrintWriter(pidfile);
+					pr.print(getPID());
+					pr.close();
+
+					pidfile.deleteOnExit();
+				}
 			}
 		} catch(Exception e){
-
 		}
 
 		// ShutdownHook
@@ -90,7 +95,7 @@ public class LogMon implements Runnable {
 
 		} catch(Exception e){
 			logger.log(Level.SEVERE, "Class not found: " + classname, e);
-			System.exit(1);
+			System.exit(20);
 		}
 
 		// Monitor all logfiles
