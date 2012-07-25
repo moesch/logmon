@@ -39,9 +39,9 @@ public class WatchSource implements Runnable, WatchSourceMBean {
 	private long last_pos = 0;
 
 	// Some static configurations
-	private static long NORMALSLEEP=1000l;
-	private static int MAXTRY=200;
-	
+	private static long NORMALSLEEP = 1000l;
+	private static int MAXTRY = 200;
+
 	/**
 	 * Monitor one LogSource
 	 * 
@@ -142,28 +142,28 @@ public class WatchSource implements Runnable, WatchSourceMBean {
 		logger.fine("StartPosition " + startposition + " set position to " + last_pos + " of " + file.getName());
 
 		long sleep = NORMALSLEEP;
-		
+
 		// Emergency exit
-		boolean watchit=true;
-		long maxtry=MAXTRY;
-		
+		boolean watchit = true;
+		long maxtry = MAXTRY;
+
 		while(watchit){
 			long len = file.length(); // get current length
 
 			if(!file.canRead()){
-				logger.info("Can't read logfile " + file.getAbsolutePath() + " sleep deeper. SleepSec: "+sleep);
+				logger.info("Can't read logfile " + file.getAbsolutePath() + " sleep deeper. SleepSec: " + sleep / 1000);
 				if(sleep < 5 * 60 * 1000L){
 					sleep *= 2;
 				}
 
 				// Emergency exit
-				if(--maxtry <=0){
-					watchit=false;
-					logger.warning("Can't read file! Give up "+file.getAbsolutePath() );
+				if(--maxtry <= 0){
+					watchit = false;
+					logger.warning("Can't read file! Give up " + file.getAbsolutePath());
 				}
 
 			} else{
-				maxtry=MAXTRY;
+				maxtry = MAXTRY;
 				sleep = NORMALSLEEP;
 			}
 
