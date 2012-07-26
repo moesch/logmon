@@ -35,6 +35,7 @@ import cfg.Config;
 
 /**
  *
+ *
  */
 public class LogMon implements Runnable {
 	private final Logger logger = Logger.getLogger(this.getClass().getName());
@@ -113,7 +114,7 @@ public class LogMon implements Runnable {
 
 	/*
 	 * ShutdownHook
-	 * 
+	 *
 	 * @see java.lang.Runnable#run()
 	 */
 	@Override
@@ -129,7 +130,7 @@ public class LogMon implements Runnable {
 
 	/**
 	 * Get config
-	 * 
+	 *
 	 * @return Instance of Config()
 	 * @see Config()
 	 */
@@ -139,7 +140,7 @@ public class LogMon implements Runnable {
 
 	/**
 	 * Get instance of Database
-	 * 
+	 *
 	 */
 	public DataBase getDatabase() {
 
@@ -168,7 +169,7 @@ public class LogMon implements Runnable {
 
 	/**
 	 * Get Program arguments
-	 * 
+	 *
 	 * @return String array argv[]
 	 */
 	public String[] getArguments() {
@@ -185,7 +186,7 @@ public class LogMon implements Runnable {
 
 	/**
 	 * Get the one and only
-	 * 
+	 *
 	 * @return LogMon
 	 */
 	public static LogMon getInstance() {
