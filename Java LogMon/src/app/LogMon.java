@@ -56,7 +56,7 @@ public class LogMon implements Runnable {
 		config = new Config(args);
 		registerMBean(config, "LogMon:type=Config");
 
-		// Write pid to file
+		// Write PID to file
 		try{
 			String pidpath = config.getPIDPath();
 
@@ -64,7 +64,7 @@ public class LogMon implements Runnable {
 				File pidfile = new File(pidpath);
 
 				if(pidfile.exists()){
-					logger.severe("PID file exists. Remove first!");
+					logger.severe("PID file exists. Remove first! File: " + pidfile.getAbsolutePath());
 					System.exit(10);
 				} else{
 
@@ -76,6 +76,7 @@ public class LogMon implements Runnable {
 				}
 			}
 		} catch(Exception e){
+			logger.warning("Can't write pid file " + e.getMessage());
 		}
 
 		// ShutdownHook
@@ -114,7 +115,7 @@ public class LogMon implements Runnable {
 
 	/*
 	 * ShutdownHook
-	 *
+	 * 
 	 * @see java.lang.Runnable#run()
 	 */
 	@Override
@@ -130,7 +131,7 @@ public class LogMon implements Runnable {
 
 	/**
 	 * Get config
-	 *
+	 * 
 	 * @return Instance of Config()
 	 * @see Config()
 	 */
@@ -140,7 +141,7 @@ public class LogMon implements Runnable {
 
 	/**
 	 * Get instance of Database
-	 *
+	 * 
 	 */
 	public DataBase getDatabase() {
 
@@ -169,7 +170,7 @@ public class LogMon implements Runnable {
 
 	/**
 	 * Get Program arguments
-	 *
+	 * 
 	 * @return String array argv[]
 	 */
 	public String[] getArguments() {
@@ -186,7 +187,7 @@ public class LogMon implements Runnable {
 
 	/**
 	 * Get the one and only
-	 *
+	 * 
 	 * @return LogMon
 	 */
 	public static LogMon getInstance() {
