@@ -1,21 +1,18 @@
-%
+
 % LogMon Manual
 %
 
 \documentclass[11pt,a4paper]{article}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 
 \setlength{\parskip}{1.1ex}
 \setlength{\parindent}{0em}
-
-\setlength{\oddsidemargin}{0cm} %now 1in
-\setlength{\textwidth}{17cm}
-\setlength{\textheight}{22cm}
 
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 
 \title{LogMon Manual}
-\author{Thomas Weidlich}
+\author{Thomas Weidlich\\E-Mail: thomas.weidlich@die-moesch.de}
 
 %Create a brand :-)
 \newcommand{\logmon}{\textbf{LogMon\ }}
@@ -43,15 +40,25 @@
   \item Store last reading position
 \end{itemize}
 
-\logmon allow the usage of \js to decide a escalation. Add a
-\verb#<condition># tag in each \verb#<pattern># tag to define the script name.
-The \js will run on every time where the pattern match.
+The core logfile engine watches all logfiles from configuration (XML) and alert
+by configurated modul to receiver. At moment two modules available: EMail or
+Tivoli.
 
+\logmon allow the usage of \js to control a escalation. Add a
+\verb#<condition># tag in each \verb#<pattern># tag inside configuration to
+define the script name.
+The Logfile engine will run the \js every time where the pattern match. The
+Returncode of \js enable or disable the escalation of current matched logfile
+line. There is a persistant memory database inside the core to decide from \js
+between two or more matched lines of all watched logfiles. The feature make
+\logmon differend to simple ``tail and grep'' logfile monitoring. The database
+enable a local state correlation.
 
-\begin{figure}[h]
+\begin{figure}[htb]
 \centering
 \includegraphics{img/LogMon.eps}
-\caption{Blockdiagramm}
+\caption{The LogMon Blockdiagram}
+\label{graph:block}
 \end{figure}
 
 %---------------------------------------------------------------------------------------------------------------
@@ -72,9 +79,10 @@ java -cp logmonModMail.jar:logmon.jar:lib/mail.jar \
 \section{The configuration}
 \label{sec:conf}
 
-\logmon require one (validated) xml file for configuration. Use argument
- \verb#--config=filename.xml# to set file.
-There are three section inside of configuration file. See chapters blow for documentation.
+\logmon require one (validated by \logmon) xml file for configuration. Use
+argument \verb#--config=filename.xml# to set filename. Inside of
+configuration there are three section inside of configuration file. See chapters
+blow for documentation.
 
 \begin{itemize}
   \item database
@@ -86,15 +94,20 @@ There are three section inside of configuration file. See chapters blow for docu
 \label{sec:cfgdb}
 
 The database section set name and path of internal database files. The database files store events for
-correlation from \js and last reading positions. The path entry is optional. If not set, the current working
-directory is used. Examples:
+correlation from \js and last reading positions. The path and pid entrys are
+optional. Examples:
 
 \begin{verbatim}
   <database>
       <id>LinuxBase</id>
       <path>/tmp</path>
+      <pid>/tmp/logmon.pid</pid>
   </database>
 \end{verbatim}
+
+If \verb#<path># not given, the current folder is used. If \verb#<pid># is
+given, \logmon will check for file exists on start. If pid file already exists,
+\logmon will not start!
 
 \subsection{The section: alert}
 
