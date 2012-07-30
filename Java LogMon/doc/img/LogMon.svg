@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:v="http://schemas.microsoft.com/visio/2003/SVGExtensions/"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="496.06299"
+   height="212.59842"
+   id="svg3495"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="LogMon.svg">
+  <defs
+     id="defs3497">
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;">
+      <path
+         id="path4590"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mstart"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mstart"
+       style="overflow:visible">
+      <path
+         id="path4587"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.4) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="EmptyTriangleOutL"
+       style="overflow:visible">
+      <path
+         id="path4742"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;fill:#FFFFFF;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(0.8) translate(-6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path4584"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="EmptyTriangleInL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="EmptyTriangleInL"
+       style="overflow:visible">
+      <path
+         id="path4733"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;fill:#FFFFFF;stroke:#000000;stroke-width:1.0pt;marker-start:none"
+         transform="scale(-0.8) translate(-6,0)" />
+    </marker>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective3503" />
+    <inkscape:perspective
+       id="perspective3383"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       id="mrkr4-75"
+       class="st15"
+       v:arrowType="4"
+       v:arrowSize="2"
+       v:setback="23"
+       refX="-23"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <use
+         height="3"
+         width="3"
+         y="0"
+         x="0"
+         href="#lend4"
+         transform="scale(-11.5,-11.5)"
+         id="use20" />
+    </marker>
+    <marker
+       id="marker3389"
+       class="st15"
+       v:arrowType="4"
+       v:arrowSize="2"
+       v:setback="23"
+       refX="-23"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <use
+         height="3"
+         width="3"
+         y="0"
+         x="0"
+         href="#lend4"
+         transform="scale(-11.5,-11.5)"
+         id="use3391" />
+    </marker>
+    <marker
+       id="marker3393"
+       class="st15"
+       v:arrowType="4"
+       v:arrowSize="2"
+       v:setback="23"
+       refX="-23"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <use
+         height="3"
+         width="3"
+         y="0"
+         x="0"
+         href="#lend4"
+         transform="scale(-11.5,-11.5)"
+         id="use3395" />
+    </marker>
+    <marker
+       id="marker3397"
+       class="st15"
+       v:arrowType="4"
+       v:arrowSize="2"
+       v:setback="23"
+       refX="-23"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <use
+         height="3"
+         width="3"
+         y="0"
+         x="0"
+         href="#lend4"
+         transform="scale(-11.5,-11.5)"
+         id="use3399" />
+    </marker>
+    <marker
+       id="mrkr13-12"
+       class="st5"
+       v:arrowType="13"
+       v:arrowSize="2"
+       v:setback="13.5"
+       refX="-13.5"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <use
+         height="3"
+         width="3"
+         y="0"
+         x="0"
+         href="#lend13"
+         transform="scale(-4.5,-4.5)"
+         id="use11" />
+    </marker>
+    <marker
+       id="marker3403"
+       class="st5"
+       v:arrowType="13"
+       v:arrowSize="2"
+       v:setback="13.5"
+       refX="-13.5"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <use
+         height="3"
+         width="3"
+         y="0"
+         x="0"
+         href="#lend13"
+         transform="scale(-4.5,-4.5)"
+         id="use3405" />
+    </marker>
+    <marker
+       id="marker3407"
+       class="st5"
+       v:arrowType="13"
+       v:arrowSize="2"
+       v:setback="13.5"
+       refX="-13.5"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <use
+         height="3"
+         width="3"
+         y="0"
+         x="0"
+         href="#lend13"
+         transform="scale(-4.5,-4.5)"
+         id="use3409" />
+    </marker>
+    <marker
+       id="marker3411"
+       class="st5"
+       v:arrowType="13"
+       v:arrowSize="2"
+       v:setback="13.5"
+       refX="-13.5"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <use
+         height="3"
+         width="3"
+         y="0"
+         x="0"
+         href="#lend13"
+         transform="scale(-4.5,-4.5)"
+         id="use3413" />
+    </marker>
+    <marker
+       id="marker3415"
+       class="st5"
+       v:arrowType="13"
+       v:arrowSize="2"
+       v:setback="13.5"
+       refX="-13.5"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <use
+         height="3"
+         width="3"
+         y="0"
+         x="0"
+         href="#lend13"
+         transform="scale(-4.5,-4.5)"
+         id="use3417" />
+    </marker>
+    <marker
+       id="marker3419"
+       class="st5"
+       v:arrowType="13"
+       v:arrowSize="2"
+       v:setback="13.5"
+       refX="-13.5"
+       orient="auto"
+       markerUnits="strokeWidth">
+      <use
+         height="3"
+         width="3"
+         y="0"
+         x="0"
+         href="#lend13"
+         transform="scale(-4.5,-4.5)"
+         id="use3421" />
+    </marker>
+    <inkscape:perspective
+       id="perspective5506"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-7"
+       style="overflow:visible">
+      <path
+         id="path4742-3"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <inkscape:perspective
+       id="perspective5534"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-9"
+       style="overflow:visible">
+      <path
+         id="path4742-4"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <inkscape:perspective
+       id="perspective5534-1"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-6"
+       style="overflow:visible">
+      <path
+         id="path4742-2"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+    <inkscape:perspective
+       id="perspective5575"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0"
+       refX="0"
+       id="EmptyTriangleOutL-5"
+       style="overflow:visible">
+      <path
+         id="path4742-7"
+         d="m 5.77,0 -8.65,5 0,-10 8.65,5 z"
+         style="fill:#ffffff;fill-rule:evenodd;stroke:#000000;stroke-width:1pt;marker-start:none"
+         transform="matrix(0.8,0,0,0.8,-4.8,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="267.09653"
+     inkscape:cy="95.530767"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="cm"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1023"
+     inkscape:window-height="711"
+     inkscape:window-x="1"
+     inkscape:window-y="31"
+     inkscape:window-maximized="1"
+     inkscape:object-paths="true"
+     inkscape:snap-nodes="false">
+    <sodipodi:guide
+       orientation="0,1"
+       position="920,611.42857"
+       id="guide3696" />
+    <inkscape:grid
+       type="xygrid"
+       id="grid3698"
+       empspacing="5"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       dotted="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata3500">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-839.76247)">
+    <g
+       transform="matrix(1.2499956,0,0,1.2499956,25.643275,767.44297)"
+       v:groupContext="shape"
+       v:mID="1"
+       id="shape1-1">
+      <title
+         id="title27">Sheet.1</title>
+      <rect
+         id="rect29"
+         class="st1"
+         height="85.039398"
+         width="141.73199"
+         y="85.039398"
+         x="0"
+         style="fill:#99cc00;stroke:#000000;stroke-width:0.72000003;stroke-linecap:round;stroke-linejoin:round" />
+    </g>
+    <g
+       transform="matrix(1.2499956,0,0,1.2499956,259.5012,703.66394)"
+       v:groupContext="shape"
+       v:mID="2"
+       id="shape2-3">
+      <title
+         id="title32">Sheet.2</title>
+      <rect
+         id="rect34"
+         class="st2"
+         height="56.692902"
+         width="85.039398"
+         y="113.386"
+         x="0"
+         style="fill:#99ccff;stroke:#000000;stroke-width:0.72000003;stroke-linecap:round;stroke-linejoin:round" />
+    </g>
+    <g
+       transform="matrix(1.2499956,0,0,1.2499956,259.5012,795.78937)"
+       v:groupContext="shape"
+       v:mID="3"
+       id="shape3-5">
+      <title
+         id="title37">Sheet.3</title>
+      <rect
+         id="rect39"
+         class="st3"
+         height="56.692902"
+         width="85.039398"
+         y="113.386"
+         x="0"
+         style="fill:#ffff99;stroke:#000000;stroke-width:0.72000003;stroke-linecap:round;stroke-linejoin:round" />
+    </g>
+    <g
+       transform="matrix(1.2499956,0,0,1.2499956,22.080285,682.22278)"
+       v:groupContext="shape"
+       v:mID="8"
+       id="shape8-28">
+      <title
+         id="title62">Sheet.8</title>
+      <desc
+         id="desc64">LogMon core</desc>
+      <v:textBlock
+         v:tabSpace="42.5197"
+         v:margins="rect(4,4,4,4)" />
+      <v:textRect
+         height="11.1935"
+         width="85.08"
+         cy="164.482"
+         cx="42.5354" />
+      <rect
+         id="rect66"
+         class="st6"
+         height="11.1935"
+         width="85.0709"
+         y="158.88499"
+         x="0"
+         style="fill:none;stroke:none;stroke-width:0.72000003;marker-end:url(#mrkr13-12)" />
+      <text
+         id="text68"
+         v:langID="1031"
+         class="st7"
+         y="168.08"
+         x="7.5"
+         style="fill:#000000;font-family:Arial"><v:paragraph
+   v:horizAlign="1" />
+<v:tabList />
+
+LogMon core</text>
+    </g>
+    <g
+       transform="matrix(1.2499956,0,0,1.2499956,238.24128,654.05788)"
+       v:groupContext="shape"
+       v:mID="9"
+       id="shape9-32">
+      <title
+         id="title71">Sheet.9</title>
+      <desc
+         id="desc73">Modul EIF</desc>
+      <v:textBlock
+         v:tabSpace="42.5197"
+         v:margins="rect(4,4,4,4)" />
+      <v:textRect
+         height="13.506"
+         width="102.65"
+         cy="163.326"
+         cx="51.3228" />
+      <rect
+         id="rect75"
+         class="st6"
+         height="13.506"
+         width="102.646"
+         y="156.573"
+         x="0"
+         style="fill:none;stroke:none;stroke-width:0.72000003;marker-end:url(#mrkr13-12)" />
+      <text
+         id="text77"
+         v:langID="1031"
+         class="st7"
+         y="166.92999"
+         x="23.98"
+         style="fill:#000000;font-family:Arial"><v:paragraph
+   v:horizAlign="1" />
+<v:tabList />
+
+Modul EIF</text>
+    </g>
+    <g
+       transform="matrix(1.2499956,0,0,1.2499956,245.32751,746.65467)"
+       v:groupContext="shape"
+       v:mID="10"
+       id="shape10-36">
+      <title
+         id="title80">Sheet.10</title>
+      <desc
+         id="desc82">Modul Mail</desc>
+      <v:textBlock
+         v:tabSpace="42.5197"
+         v:margins="rect(4,4,4,4)" />
+      <v:textRect
+         height="11.7157"
+         width="89.04"
+         cy="164.221"
+         cx="44.5197" />
+      <rect
+         id="rect84"
+         class="st6"
+         height="11.7157"
+         width="89.039398"
+         y="158.36301"
+         x="0"
+         style="fill:none;stroke:none;stroke-width:0.72000003;marker-end:url(#mrkr13-12)" />
+      <text
+         id="text86"
+         v:langID="1031"
+         class="st7"
+         y="167.82001"
+         x="15.51"
+         style="fill:#000000;font-family:Arial"><v:paragraph
+   v:horizAlign="1" />
+<v:tabList />
+
+Modul Mail</text>
+    </g>
+    <g
+       v:groupContext="group"
+       v:mID="17"
+       transform="matrix(1.2499956,0,0,1.2499956,47.985695,763.61848)"
+       id="group17-40">
+      <title
+         id="title89">Sheet.17</title>
+      <g
+         v:groupContext="shape"
+         v:mID="12"
+         id="shape12-41">
+        <title
+           id="title92">Sheet.12</title>
+        <ellipse
+           d="m 25.511801,165.979 c 0,2.26443 -5.711011,4.10011 -12.755901,4.10011 C 5.7110111,170.07911 0,168.24343 0,165.979 c 0,-2.26442 5.7110111,-4.10011 12.7559,-4.10011 7.04489,0 12.755901,1.83569 12.755901,4.10011 z"
+           id="ellipse94"
+           class="st8"
+           ry="4.1001101"
+           rx="12.7559"
+           cy="165.979"
+           cx="12.7559"
+           sodipodi:cx="12.7559"
+           sodipodi:cy="165.979"
+           sodipodi:rx="12.7559"
+           sodipodi:ry="4.1001101"
+           style="fill:#969696;stroke:#000000;stroke-width:0.72000003;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#mrkr13-12)" />
+      </g>
+      <g
+         transform="translate(0,-4.10011)"
+         v:groupContext="shape"
+         v:mID="13"
+         id="shape13-44">
+        <title
+           id="title97">Sheet.13</title>
+        <rect
+           id="rect99"
+           class="st9"
+           height="8.2002201"
+           width="25.511801"
+           y="161.879"
+           x="0"
+           style="fill:#969696;stroke:none;stroke-width:0.72000003;marker-end:url(#mrkr13-12)" />
+      </g>
+      <g
+         transform="translate(0,-8.20022)"
+         v:groupContext="shape"
+         v:mID="11"
+         id="shape11-47">
+        <title
+           id="title102">Sheet.11</title>
+        <ellipse
+           d="m 25.511801,165.979 c 0,2.26443 -5.711011,4.10011 -12.755901,4.10011 C 5.7110111,170.07911 0,168.24343 0,165.979 c 0,-2.26442 5.7110111,-4.10011 12.7559,-4.10011 7.04489,0 12.755901,1.83569 12.755901,4.10011 z"
+           id="ellipse104"
+           class="st8"
+           ry="4.1001101"
+           rx="12.7559"
+           cy="165.979"
+           cx="12.7559"
+           sodipodi:cx="12.7559"
+           sodipodi:cy="165.979"
+           sodipodi:rx="12.7559"
+           sodipodi:ry="4.1001101"
+           style="fill:#969696;stroke:#000000;stroke-width:0.72000003;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#mrkr13-12)" />
+      </g>
+      <g
+         transform="matrix(0,1,-1,0,170.079,157.778)"
+         v:groupContext="shape"
+         v:mID="14"
+         id="shape14-50">
+        <title
+           id="title107">Sheet.14</title>
+        <path
+           id="path109"
+           class="st10"
+           d="m 0,170.08 8.2,0"
+           style="stroke:#000000;stroke-width:0.72000003;stroke-linecap:round;stroke-linejoin:round" />
+      </g>
+      <g
+         transform="matrix(0,1,-1,0,195.591,157.778)"
+         v:groupContext="shape"
+         v:mID="15"
+         id="shape15-53">
+        <title
+           id="title112">Sheet.15</title>
+        <path
+           id="path114"
+           class="st11"
+           d="m 0,170.08 8.2,0"
+           style="stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round" />
+      </g>
+      <g
+         transform="matrix(0,1,-1,0,195.591,157.778)"
+         v:groupContext="shape"
+         v:mID="16"
+         id="shape16-56">
+        <title
+           id="title117">Sheet.16</title>
+        <path
+           id="path119"
+           class="st10"
+           d="m 0,170.08 8.2,0"
+           style="stroke:#000000;stroke-width:0.72000003;stroke-linecap:round;stroke-linejoin:round" />
+      </g>
+    </g>
+    <g
+       transform="matrix(1.2499956,0,0,1.2499956,68.984314,824.32327)"
+       v:groupContext="shape"
+       v:mID="20"
+       id="shape20-62">
+      <title
+         id="title131">Sheet.20</title>
+      <desc
+         id="desc133">Logfiles</desc>
+      <v:textBlock
+         v:tabSpace="42.5197"
+         v:margins="rect(4,4,4,4)" />
+      <v:textRect
+         height="20"
+         width="152"
+         cy="160.079"
+         cx="76" />
+      <rect
+         id="rect135"
+         class="st12"
+         height="20"
+         width="152"
+         y="150.07899"
+         x="0"
+         style="fill:none;stroke:none" />
+      <text
+         id="text137"
+         v:langID="1031"
+         class="st7"
+         y="163.67999"
+         x="55.32"
+         style="fill:#000000;font-family:Arial"><v:paragraph
+   v:horizAlign="1" />
+<v:tabList />
+
+Logfiles</text>
+    </g>
+    <g
+       transform="matrix(1.2499956,0,0,1.2499956,380.83827,674.71655)"
+       v:groupContext="shape"
+       v:mID="24"
+       id="shape24-76">
+      <title
+         id="title145">Sheet.24</title>
+      <desc
+         id="desc147">Tivoli</desc>
+      <v:textBlock
+         v:tabSpace="42.5197"
+         v:margins="rect(4,4,4,4)" />
+      <v:textRect
+         height="8.02321"
+         width="60.98"
+         cy="166.067"
+         cx="30.4882" />
+      <rect
+         id="rect149"
+         class="st16"
+         height="8.0232096"
+         width="60.976398"
+         y="162.056"
+         x="0"
+         style="fill:none;stroke:none;stroke-width:0.23999999;marker-end:url(#mrkr4-75)" />
+      <text
+         id="text151"
+         v:langID="1031"
+         class="st7"
+         y="169.67"
+         x="16.5"
+         style="fill:#000000;font-family:Arial"><v:paragraph
+   v:horizAlign="1" />
+<v:tabList />
+
+Tivoli</text>
+    </g>
+    <g
+       transform="matrix(1.2499956,0,0,1.2499956,376.42954,767.44297)"
+       v:groupContext="shape"
+       v:mID="25"
+       id="shape25-80">
+      <title
+         id="title154">Sheet.25</title>
+      <desc
+         id="desc156">SMTP</desc>
+      <v:textBlock
+         v:tabSpace="42.5197"
+         v:margins="rect(4,4,4,4)" />
+      <v:textRect
+         height="9.17944"
+         width="69.77"
+         cy="165.489"
+         cx="34.8819" />
+      <rect
+         id="rect158"
+         class="st16"
+         height="9.1794395"
+         width="69.763802"
+         y="160.899"
+         x="0"
+         style="fill:none;stroke:none;stroke-width:0.23999999;marker-end:url(#mrkr4-75)" />
+      <text
+         id="text160"
+         v:langID="1031"
+         class="st7"
+         y="169.09"
+         x="18.209999"
+         style="fill:#000000;font-family:Arial"><v:paragraph
+   v:horizAlign="1" />
+<v:tabList />
+
+SMTP</text>
+    </g>
+    <g
+       transform="matrix(1.2499956,0,0,1.2499956,33.673885,729.73302)"
+       v:groupContext="shape"
+       v:mID="22"
+       id="shape22-84">
+      <title
+         id="title163">Sheet.22</title>
+      <rect
+         id="rect165"
+         class="st17"
+         height="28.3465"
+         width="56.692902"
+         y="141.73199"
+         x="0"
+         style="fill:#ffcc00;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#mrkr4-75)" />
+    </g>
+    <g
+       transform="matrix(1.2499956,0,0,1.2499956,125.93816,749.82503)"
+       v:groupContext="shape"
+       v:mID="26"
+       id="shape26-91">
+      <title
+         id="title179">Sheet.26</title>
+      <desc
+         id="desc181">Logfile Engine</desc>
+      <v:textBlock
+         v:tabSpace="42.5197"
+         v:margins="rect(4,4,4,4)" />
+      <v:textRect
+         height="28.3465"
+         width="56.7"
+         cy="155.906"
+         cx="28.3465" />
+      <rect
+         id="rect183"
+         class="st17"
+         height="28.3465"
+         width="56.692902"
+         y="141.73199"
+         x="0"
+         style="fill:#ffcc00;stroke:#000000;stroke-width:0.23999999;stroke-linecap:round;stroke-linejoin:round;marker-end:url(#mrkr4-75)" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-size:9.99999905px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="68.327202"
+       y="919.89062"
+       id="text3333"><tspan
+         sodipodi:role="line"
+         id="tspan3335"
+         x="68.327202"
+         y="919.89062">JavaScript</tspan><tspan
+         sodipodi:role="line"
+         x="68.327202"
+         y="932.39062"
+         id="tspan3337">Engine</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:9.99999905px;font-style:normal;font-weight:normal;text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="160.48294"
+       y="941.87427"
+       id="text3333-3"><tspan
+         sodipodi:role="line"
+         id="tspan3335-0"
+         x="160.48294"
+         y="941.87427">LogFile</tspan><tspan
+         sodipodi:role="line"
+         x="160.48294"
+         y="954.37427"
+         id="tspan3337-0">Engine</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#EmptyTriangleOutL)"
+       d="m 161.07143,1010.9323 0,-42.85713"
+       id="path5050" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#EmptyTriangleOutL)"
+       d="m 202.85715,926.64657 55.71428,44.64289"
+       id="path5050-7"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#EmptyTriangleOutL)"
+       d="m 203.21429,925.39482 55.71428,-42.85705"
+       id="path5050-7-7"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#EmptyTriangleOutL)"
+       d="m 366.42857,881.82344 31.07142,4e-5"
+       id="path5050-7-8"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#EmptyTriangleOutL)"
+       d="m 365.17858,976.64658 30.71427,-0.35711"
+       id="path5050-7-8-4"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="M 104.64286,922.00375 125,944.86089"
+       id="path5595" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-start:url(#Arrow1Mstart);marker-end:url(#Arrow1Mend)"
+       d="m 64.642857,114.02699 0,-16.785714"
+       id="path5597"
+       transform="translate(0,839.76247)" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-weight:normal;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="138.39285"
+       y="900.03943"
+       id="text6697"><tspan
+         sodipodi:role="line"
+         id="tspan6699"
+         x="138.39285"
+         y="900.03943">&lt;config&gt;</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Mend)"
+       d="m 160,62.955562 -0.17857,21.428571"
+       id="path6701"
+       transform="translate(0,839.76247)" />
+  </g>
+</svg>
