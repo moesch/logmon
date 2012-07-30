@@ -47,6 +47,13 @@
 \verb#<condition># tag in each \verb#<pattern># tag to define the script name.
 The \js will run on every time where the pattern match.
 
+
+\begin{figure}[h]
+\centering
+\includegraphics{img/LogMon.eps}
+\caption{Block}
+\end{figure}
+
 %---------------------------------------------------------------------------------------------------------------
 \section{Installation}
 
@@ -390,10 +397,18 @@ servers).
 \subsection{Alert module Mail}
 
 Send alert as mail to SMTP receiver. Require the additional jar mail in
-CLASSPATH. If the SMTP server need some authentication set user and
-password. Be careful about file permissions of
+CLASSPATH. If the locahost has listen at smtp port you only require 
+init.smtp.server and I recommend init.smtp.from. :-) 
+
+Inside the pattern you will use send.smtp.to and send.smtp.subject as you like
+an need. The mail body is hardcoded. Maybe the future will give
+some template function. 
+
+If the SMTP server need some authentication set init.smtp.user and
+init.smtp.password. Be careful about file permissions of
 configuration! This is not a secure setup.
 
+\begin{table}[ht]
 \begin{tabular}{l|p{0.5\textwidth}}
   Property 		    & Description\\\hline
   init.smtp.server 	& The smtp server\\
@@ -403,6 +418,8 @@ configuration! This is not a secure setup.
   send.smtp.to 		& Receiver mail address\\
   send.smtp.subject & The Mail subject\\
 \end{tabular}
+\caption{Modul mail properties}
+\end{table}
 
 \section{Debugging}
 
