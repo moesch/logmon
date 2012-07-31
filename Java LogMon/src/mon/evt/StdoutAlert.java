@@ -18,18 +18,27 @@
 
 package mon.evt;
 
+import java.text.DateFormat;
+import java.util.Date;
 import java.util.Properties;
 
 /**
  *
  */
 public class StdoutAlert implements IAlert {
+	long start_epoch = 0;
+	int count = 0;
 
 	/*
 	 * @see mon.evt.IAlert#init()
 	 */
 	@Override
 	public boolean init(Properties properties) {
+
+		start_epoch = new Date().getTime();
+		count = 0;
+
+		System.out.println("Start timstamp: 0 at : " + DateFormat.getTimeInstance().format(new Date()));
 
 		System.out.println(properties.get("init.msg"));
 
@@ -41,6 +50,9 @@ public class StdoutAlert implements IAlert {
 	 */
 	@Override
 	public boolean send(Properties properties) {
+		long now = new Date().getTime();
+
+		System.out.println("Timestamp: " + (now - start_epoch) / 1000 + " Sec AlertCount: " + count++);
 
 		System.out.printf("%s Severity: %s  Message: %s\n", properties.get("send.pre"), properties.get("send.severity"), properties.get("send.msg"));
 		for(Object key : properties.keySet()){
@@ -55,6 +67,7 @@ public class StdoutAlert implements IAlert {
 	 */
 	@Override
 	public boolean stop() {
+		System.out.println("STOP: " + DateFormat.getTimeInstance().format(new Date()));
 		return true;
 	}
 
