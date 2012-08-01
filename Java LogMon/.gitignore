@@ -5,3 +5,5 @@
 /logmon.*
 
 /tws
+/.texlipse
+/.externalToolBuilders
