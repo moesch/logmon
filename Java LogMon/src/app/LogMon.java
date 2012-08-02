@@ -202,7 +202,25 @@ public class LogMon implements Runnable {
 	 */
 	public static void main(String[] args) {
 		LogMon.args = args;
-		LogMon.getInstance();
+		
+		if(args.length==0){
+			usage();
+		}
+		
+		for(String a : args){
+			if(a.equals("-h") || a.equals("--help") ){
+				usage();
+			}
+			
+			if(a.startsWith("--config") ){
+				LogMon.getInstance();
+			}
+		}
+	}
+
+	private static void usage() {
+		System.err.println("LogMon - Logfile monitor");
+		System.err.println("Call: java -cp logmon.jar app.LogMon --config=mycfg.xml");
 	}
 
 }
