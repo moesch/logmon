@@ -18,64 +18,53 @@
 
 package cfg;
 
-import java.util.List;
 import java.util.Properties;
-
-import mon.LogSource;
 
 /**
  *
  */
 public interface ConfigMBean {
 
-	/**
-	 * Get List of LogSource
-	 * 
-	 * @return All LogSource from configuration file
-	 * 
-	 * @see LogSource()
-	 */
-	public abstract List<LogSource> getLogSources();
 
 	/**
 	 * Get database id
-	 * 
+	 *
 	 * @return the database id from configuration file
 	 */
 	public abstract String getDBID();
 
 	/**
 	 * Get path to database folder
-	 * 
+	 *
 	 * @return Path from config file or user's current working directory
 	 */
 	public abstract String getDBPath();
 
 	/**
 	 * Get name of alertclass from configuration
-	 * 
+	 *
 	 * @return Name of class
 	 */
 	public abstract String getAlertClass();
 
 	/**
 	 * Get the init properties
-	 * 
-	 * 
+	 *
+	 *
 	 * @return The Properties
 	 */
 	public abstract Properties getAlertInit();
 
 	/**
 	 * Get the send properties
-	 * 
+	 *
 	 * @return The Properties
 	 */
 	public abstract Properties getAlertSend();
 
 	/**
 	 * Get the stop properties
-	 * 
+	 *
 	 * @return The Properties
 	 */
 	public abstract Properties getAlertStop();
@@ -84,7 +73,7 @@ public interface ConfigMBean {
 	 * Get Config File Name
 	 */
 	public abstract String getConfigFileName();
-	
+
 	/**
 	 * Get path of PID file or null
 	 */

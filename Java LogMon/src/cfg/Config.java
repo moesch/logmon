@@ -42,7 +42,7 @@ public class Config implements ConfigMBean {
 	private String db_id = "Default";
 	private String db_path = null;
 	private String pid_path = null;
-	
+
 	private String alertclass = "unknown";
 	private final Properties alert_init = new Properties();
 	private final Properties alert_send = new Properties();
@@ -105,8 +105,8 @@ public class Config implements ConfigMBean {
 			Node pid_nodes = (Node) xpath.evaluate("//config/database/pid", document, XPathConstants.NODE);
 			if(pid_nodes != null){
 				pid_path = pid_nodes.getTextContent();
-			} 
-			
+			}
+
 			// IAlert
 			Node alert_nodes = (Node) xpath.evaluate("//config/alert/class", document, XPathConstants.NODE);
 			alertclass = alert_nodes.getTextContent();
@@ -209,10 +209,13 @@ public class Config implements ConfigMBean {
 		}
 	}
 
-	/*
-	 * @see cfg.ConfigMBean#getLogSources()
+	/**
+	 * Get List of LogSource
+	 *
+	 * @return All LogSource from configuration file
+	 *
+	 * @see LogSource()
 	 */
-	@Override
 	public List<LogSource> getLogSources() {
 		return logsources;
 	}
