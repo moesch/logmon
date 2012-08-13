@@ -78,11 +78,19 @@ enable a local state correlation.
    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301 USA
 
 %---------------------------------------------------------------------------------------------------------------
-\section{Installation}
+\section{Build and Installation}
 
+\subsection{Build}
+
+To build \logmon core and module from source you need a jdk6 or newer and ant.
+Simply extract the source to some folder an call ant from commandline. 
+The jar created inside folder dist.
+
+\subsection{Install}
 Simply copy logmon.jar and one alert module jar in a folder. Create a
-configuration file and start \logmon with \java version 6 or later. If the
-alert module require some additional jar, copy also into the folder.
+configuration file and start \logmon with \java version 6 or later (See example
+below). If the alert module require some additional jar, copy also into the
+folder.
 
 \begin{verbatim}
 
