@@ -20,12 +20,13 @@ package cfg;
 
 /**
  * Possible start positions while open logfile
- * 
+ *
  * <ul>
  * <li>CURRENT : The crurent logfile position</li>
- * <li>BEGIN : Read from begin of logfile
+ * <li>BEGIN : Read from begin of logfile</li>
+ * <li>LAST : Read from last position before stop logmon</li>
  * </ul>
- * 
+ *
  * @author thomas.weidlich@die-moesch.de
  */
 public enum StartPosition {
