@@ -18,6 +18,8 @@
 
 package cfg;
 
+import java.util.List;
+
 import junit.framework.Assert;
 
 import org.junit.Test;
@@ -40,4 +42,23 @@ public class TestUtils {
 
 	}
 
+	@Test
+	public void testResolvGlob() {
+		List<String> result;
+
+		result = Util.resolvGlob("doc/i*/*", null);
+		Assert.assertTrue(result != null && result.size() > 0);
+
+		result = Util.resolvGlob("doc/*.tex", null);
+		Assert.assertTrue(result != null && result.size() == 1);
+
+		result = Util.resolvGlob("src/*/*.java", null);
+		Assert.assertTrue(result != null && result.size() > 0);
+
+		result = Util.resolvGlob("*.java", null);
+		Assert.assertTrue(result != null && result.size() == 0);
+
+		result = Util.resolvGlob("*", "abcdefghij-folder-not-exists");
+		Assert.assertNull(result);
+	}
 }
