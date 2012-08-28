@@ -18,7 +18,7 @@
 
 package cfg;
 
-import java.util.List;
+import java.util.*;
 
 import junit.framework.Assert;
 
@@ -44,21 +44,37 @@ public class TestUtils {
 
 	@Test
 	public void testResolvGlob() {
+
+		@SuppressWarnings("serial")
+		Map<String, Integer> all_globs = new HashMap<String, Integer>() {
+			{
+				put("doc/*.tex", 1);
+				put("src/*/*.java", 15);
+				put("doc/i*/*.*", 3);
+				put("a/b/*", 0);
+			}
+		};
+
+		System.out.println("-------------------------------------------------------------");
+		System.out.println("TEST: testResolvGlob()");
+
 		List<String> result;
 
-		result = Util.resolvGlob("doc/i*/*", null);
-		Assert.assertTrue(result != null && result.size() > 0);
+		for(String glob : all_globs.keySet()){
+			result = Util.resolvGlob(glob, null);
 
-		result = Util.resolvGlob("doc/*.tex", null);
-		Assert.assertTrue(result != null && result.size() == 1);
+			System.out.println("\nGlob: " + glob + " =>");
+			printList(result);
+			System.out.println("Count: " + result.size());
 
-		result = Util.resolvGlob("src/*/*.java", null);
-		Assert.assertTrue(result != null && result.size() > 0);
+			Assert.assertTrue(result != null && result.size() == all_globs.get(glob));
 
-		result = Util.resolvGlob("*.java", null);
-		Assert.assertTrue(result != null && result.size() == 0);
+		}
+	}
 
-		result = Util.resolvGlob("*", "abcdefghij-folder-not-exists");
-		Assert.assertNull(result);
+	void printList(List<String> result) {
+		for(String s : result){
+			System.out.println(s);
+		}
 	}
 }
