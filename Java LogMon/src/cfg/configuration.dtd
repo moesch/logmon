@@ -8,6 +8,7 @@
 
 <!ELEMENT file (#PCDATA)>
 <!ATTLIST file start CDATA #IMPLIED>
+<!ATTLIST file id CDATA #IMPLIED>
 
 <!ELEMENT database (id,pid?,path?)>
 <!ELEMENT id (#PCDATA)>
